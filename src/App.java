@@ -8,6 +8,8 @@ public class App {
         System.out.println("Detta är en frågesport!");
         System.out.println("     ");
         System.out.println("Använd tangentbordet för att mata in svaren 'ja' eller 'nej' på frågorna.");
+        
+        //Frågor (5 stycken)
         System.out.println("     ");
         System.out.println("Fråga 1: Är det jämnt datum idag?");
         System.out.print("Ditt svar: ");
@@ -41,7 +43,7 @@ public class App {
             poäng++;
         }
         System.out.println("     ");
-        System.out.println("Fråga 5: Var det senase presidentvalet i USA år 2020?");
+        System.out.println("Fråga 5: Var det senaste presidentvalet i USA år 2020?");
         System.out.print("Ditt svar: ");
         String svar5 = tangentbord.nextLine();
         if (svar5.equalsIgnoreCase("ja"))
@@ -49,9 +51,9 @@ public class App {
             poäng++;
         }
 
-
+        //Resultat
         System.out.println("     ");
-        System.out.println("Din slutpoäng är: "+poäng);
+        System.out.println("Din slutpoäng är: "+poäng+"/5");
         tangentbord.close();
     }
 }
